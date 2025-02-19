@@ -1,0 +1,62 @@
+
+
+body.no-scroll {
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+@media (max-width: 768px) { /* Mobile */
+    
+    .btnsm{
+        width: 225px !important;
+    }  
+
+    .textsml{
+        font-size: 25px !important;
+    }
+    .textvsml{
+        font-size: 20px !important;
+    }
+
+    .font-montserrat.my-14.mx-56 {
+        width: 85%;
+        text-align: center;
+        margin: 21px auto;
+      }
+      #shootheading{
+        font-size: 4rem !important;
+    }
+    .parasml{
+        font-size: 19px !important;
+        text-align: left !important;
+    }
+    #heading2 {
+        font-size: 3rem;
+    }
+    #heading1 {
+        font-size: 3rem;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) { /* Tablet */
+    
+    
+    .textsml{
+        font-size: 1.3rem !important;
+    }
+    #shootheading{
+        font-size: 5rem !important;
+    }
+    .parasml{
+        font-size: 1.3rem !important;
+    }
+    #heading2 {
+        font-size: 5rem;
+    }
+    #heading1 {
+        font-size: 5rem;
+    }
+  }
+  

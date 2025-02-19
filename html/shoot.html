@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion Influencer</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+    <link rel="stylesheet" href="../css/resp.css">
+  </head>
+  <body>
+    <div id="cursor"></div>
+    <section class="bg-[#F4EFE8] ">
+      <nav id="nav" class="flex justify-between items-center px-9 py-6 relative">
+        <div class="logo w-[30%]">
+            <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/site-logo.svg" alt="Logo">
+        </div>
+        
+        <!-- Desktop Menu -->
+        <ul class="nav-link hidden md:flex justify-end items-center space-x-6">
+            <li><a href="./Index.html" class="uppercase text-[17px] hover:text-[#d2691e] font-montserrat">Home</a></li>
+            <li><a href="./shoot.html" class="uppercase text-[17px] hover:text-[#d2691e] font-montserrat">Shoots</a></li>
+            <li><a href="./lookbook.html" class="uppercase text-[17px] hover:text-[#d2691e] font-montserrat">Lookbook</a></li>
+            <li><a href="./About.html" class="uppercase text-[17px] hover:text-[#d2691e] font-montserrat">AboutMe</a></li>
+            <li><a href="./Blog.html" class="uppercase text-[17px] hover:text-[#d2691e] font-montserrat">FashionTips</a></li>
+            <li><a href="./contact.html" class="uppercase hover:text-[#d2691e] font-montserrat">Contact</a></li>
+        </ul>
+        
+        <a href="./contact.html" class="hidden md:block">
+            <button id="test" class="btn w-52 h-11 border-2 border-black hover:bg-black hover:text-white transition-colors duration-300">
+                Work with me
+            </button>
+        </a>
+        
+        <!-- Mobile Menu Button -->
+        <button id="menu-toggle" class="md:hidden text-3xl">
+            <i class="ri-menu-line"></i>
+        </button>
+
+        <!-- Add this Mobile Menu structure -->
+        <div id="mobile-menu" class="fixed top-0 right-0 h-full w-64 bg-white transform translate-x-full transition-transform duration-300 ease-in-out z-50 shadow-lg">
+            <button id="close-menu" class="absolute top-6 right-6 text-2xl">
+                <i class="ri-close-line"></i>
+            </button>
+            <ul class="flex flex-col space-y-6 pt-20 px-6">
+                <li><a href="./Index.html" class="menu-link uppercase text-[17px] hover:text-[#d2691e] font-montserrat">Home</a></li>
+                <li><a href="./shoot.html" class="menu-link uppercase text-[17px] hover:text-[#d2691e] font-montserrat">Shoots</a></li>
+                <li><a href="./lookbook.html" class="menu-link uppercase text-[17px] hover:text-[#d2691e] font-montserrat">Lookbook</a></li>
+                <li><a href="./About.html" class="menu-link uppercase text-[17px] hover:text-[#d2691e] font-montserrat">AboutMe</a></li>
+                <li><a href="./Blog.html" class="menu-link uppercase text-[17px] hover:text-[#d2691e] font-montserrat">FashionTips</a></li>
+                <li><a href="./contact.html" class="menu-link uppercase hover:text-[#d2691e] font-montserrat">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class=" h-full md:h-[400px] lg:h-[600px] flex justify-center items-center">
+      <div class="w-4/5 m-auto ">
+        <div class="text-center">
+          <h1 id="shootheading" class="text-9xl mt-32 font-cormorant">Shoots</h1>
+        </div>
+      </div>
+    </div>
+          <!-- Categories Section -->
+        <div
+          class="grid grid-cols-1 my-12 px-40 md:grid-cols-3 text-center gap-8"
+        >
+          <div>
+            <p
+              class="text-xl font-cormorant text-[#b68b7c] tracking-wider mb-2"
+            >
+              01
+            </p>
+            <p class="text-[22px] font-cormorant">Clothing</p>
+          </div>
+          <div>
+            <p
+              class="text-xl font-cormorant text-[#b68b7c] tracking-wider mb-2"
+            >
+              02
+            </p>
+            <p class="text-[22px] font-cormorant">Accessories</p>
+          </div>
+          <div>
+            <p
+              class="text-xl font-cormorant text-[#b68b7c] tracking-wider mb-2"
+            >
+              03
+            </p>
+            <p class="text-[22px] font-cormorant">Cosmetics</p>
+          </div>
+        </div>
+      
+        <div class="shoot-container flex flex-col md:flex-row">
+          <div id="look1" class="left-container w-full md:w-auto px-4 md:px-0">
+            <div class="mb-8 md:mb-0">
+              <span>001</span>
+              <img
+                src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-photo-shoots-1-a.jpg"
+                alt=""
+                class="w-full"
+              />
+            </div>
+            <div class="mt-8 md:mt-12">
+              <span>002</span>
+              <img
+                src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-photo-shoots-1-d.jpg"
+                alt=""
+                class="w-full"
+              />
+            </div>
+          </div>
+          <div id="centercont" class="center-container w-full md:w-auto px-4 md:px-0 md:mx-12 mt-8 md:mt-0">
+            <div class="w-full">
+              <span>003</span>
+              <img
+                src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-photo-shoots-1-c.jpg"
+                alt=""
+                class="w-full"
+              />
+            </div>
+          </div>
+          <div id="rightcont" class="right-container w-full md:w-[25%] px-4 md:px-0 mt-8 md:mt-0">
+            <div class="w-full">
+              <span>004</span>
+              <img
+                src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-photo-shoots-1-b.jpg"
+                alt=""
+                class="w-full"
+              />
+            </div>
+          </div>
+        </div>
+       
+        <div class=" shoot-containersec flex flex-col md:flex-row mt-16 min-h-[670px] justify-center items-center px-4 md:px-0">
+          <div id="downcont" class="center-container w-full md:w-auto mb-8 md:mb-0">
+            <div class="w-full md:w-[70%]">
+              <span>003</span>
+              <img
+                src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-photo-shoots-2-a.jpg"
+                alt=""
+                class="w-full"
+              />
+            </div>
+          </div>
+          <div id="downcont2" class="right-container w-full md:w-auto mb-8 md:mb-0">
+            <div class="w-full">
+              <span>004</span>
+              <img
+                src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-photo-shoots-2-b.jpg"
+                alt=""
+                class="w-full"
+              />
+            </div>
+          </div>
+          
+          <p class="font-cormorant text-2xl md:text-3xl w-full md:w-1/5 text-center md:text-left md:ml-8">
+            Fringilla imperdiet iaculis in bibendum diam
+          </p>      
+        </div>
+     <br><br><br><br>
+    </section>
+    <section class="relative top-40 w-[90%] md:w-4/5 m-auto">
+      <div class="flex flex-col md:flex-row px-4 md:px-0">
+        <div id="rightcont2" class="left-container w-full md:w-[25%] mb-8 md:mb-0">
+          <div>
+            <span>001</span>
+            <img
+              src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-photo-shoots-6.jpg"
+              alt=""
+              class="w-full"
+            />
+          </div>
+        </div>
+        <div id="downcont3" class="center-container w-full md:w-[35%] md:mx-12 mb-8 md:mb-0 md:mt-12">
+          <div>
+            <span>003</span>
+            <img
+              src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-photo-shoots-3-b.jpg"
+              class="w-full"
+              alt=""
+            />
+          </div>
+        </div>
+        <div id="rightcont3" class="right-container w-full md:w-[28%] md:mt-12 md:relative md:bottom-28">
+          <h2 class="font-cormorant mb-6 md:mb-9 text-xl lg:text-2xl font-bold text-gray-900 leading-tight">Morbi sed accumsan vulputate faucibus</h2>
+          <div class="w-full">
+            <span>004</span>
+            <img
+              src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-hero-img.jpg"
+              alt=""
+              class="w-full"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="shoot-container flex flex-col md:flex-row px-4 md:px-0 mt-8 md:mt-0">
+        <div id="rightcont4" class="left-container w-full sm:w-[80%] md:w-[28%] mx-auto md:mx-0 mb-8 md:mb-0 md:mt-24">
+          <div class="md:mt-12">
+            <span>001</span>
+            <img
+              src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-photo-shoots-8.jpg"
+              alt=""
+              class="w-full"
+            />
+          </div>
+        </div>
+        <div id="downcont4" class="center-container w-full sm:w-[80%] md:w-[30%] mx-auto md:mx-12 mb-8 md:mb-0">
+          <div class="w-full">
+            <span>003</span>
+            <img
+              src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-photo-shoots-4-b.jpg"
+              alt=""
+              class="w-full"
+            />
+          </div>
+        </div>
+        <div id="rightcont5" class="right-container my-8 w-full sm:w-[80%] md:w-[25%] mx-auto md:mx-0  md:mt-20">
+          <div class="w-full h-full">
+            <span>004</span>
+            <img
+              src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-photo-shoots-4-a.jpg"
+              alt=""
+              class="w-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <div class="h-[600px] flex justify-center items-center">
+    <div id="letsget" class="lets-talk mt-20">
+        <h3 class=" textvsml text-center text-4xl font-cormorant text-black  ">I Love To Work With Passionate</h3>
+        <h3 class=" textvsml text-center text-4xl font-cormorant mt-6">Fashion Brands And People.</h3>
+        <div class=" flex justify-center mt-12">
+          <a href="./contact.html"> <button class=" text-center font-cormorant w-[150px] h-[45px] border-2 border-black ">Lets Talk</button></a>
+        </div>
+      </div>
+    </div>
+      <footer class="w-full bg-white">
+        <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col items-center space-y-6">
+          <!-- Logo and Navigation -->
+          <div class="w-full flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+            <!-- Logo -->
+            <div>
+              <h1 class="text-2xl font-montserrat text-black leading-tight text-center md:text-left">
+                Kristin <br> Foxx <span class="inline-block w-4 h-[2px] bg-black mt-2"></span>
+              </h1>
+            </div>
+            <!-- Navigation -->
+            <ul
+              class="flex flex-wrap justify-center md:justify-start space-x-4 md:space-x-8 text-gray-700 text-sm font-cormorant">
+              <li><a href="./Index.html" class="hover:text-black text-[18px] ">Home</a></li>
+              <li><a href="./shoot.html" class="hover:text-black text-[18px] ">Shoots</a></li>
+              <li><a href="./lookbook.html" class="hover:text-black text-[18px] ">Lookbook</a></li>
+              <li><a href="./About.html" class="hover:text-black text-[18px] ">About Me</a></li>
+              <li><a href="./Blog.html" class="hover:text-black text-[18px] ">Fashion Tips</a></li>
+              <li><a href="./contact.html" class="hover:text-black text-[18px] ">Contact</a></li>
+            </ul>
+            <!-- Social Media Icons -->
+            <div class="flex justify-center md:justify-end space-x-4 text-black">
+              <a href="#" class="text-lg"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="text-lg"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-lg"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="text-lg"><i class="fab fa-pinterest"></i></a>
+              <a href="#" class="text-lg"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Section -->
+        <div
+          class="w-full h-32 bg-[#f7f3ee] text-gray-700 py-4 flex flex-col md:flex-row justify-around items-center px-4 md:px-6 font-cormorant space-y-2 md:space-y-0">
+          <p class="text-center text-[16px] md:text-left">Copyright © 2025 Fashion Influencer</p>
+          <p class="text-center text-[16px] md:text-right">Powered by laraib Asjed</p>
+        </div>
+      </footer>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"
+    integrity="sha512-xAxjKW1J/R4TFytv43xvQ7jFTrJlBzsDOH/Aw0fFc2nvarQkE3d08lTicjzUsZJYDoHYDCpwsUUqOJXh34A1sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/splittype"></script>
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script> 
+
+  <script src="../Js/index.js"></script>
+  <script src="../Js/gsap/lookgsap.js"></script>
+</html>
+<style>
+  #cursor{
+    height: 50px;
+    width: 50px;
+    background: black;
+    /* overflow: hidden; */
+    border-radius: 50%;
+    position: fixed;
+    transition: transform 0.2s ease;
+    background-image: url(https://i.pinimg.com/736x/c5/d8/37/c5d837fa1fbcadb0b236d296f96b189c.jpg);
+    background-size: cover;
+    background-position: center;
+}
+</style>

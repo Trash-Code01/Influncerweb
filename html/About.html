@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Influencer</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+      <link rel="stylesheet" href="../css/resp.css">
+</head>
+<body>
+  <div id="cursor"></div>
+  <nav id="nav" class="bg-[#F4EFE8] flex justify-between items-center px-9 py-6 relative">
+    <div class="logo w-[30%]">
+        <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/site-logo.svg" alt="Logo">
+    </div>
+    
+    <!-- Desktop Menu -->
+    <ul class="nav-link hidden md:flex justify-end items-center space-x-6">
+        <li><a href="./Index.html" class="uppercase text-[17px] hover:text-[#d2691e] font-montserrat">Home</a></li>
+        <li><a href="./shoot.html" class="uppercase text-[17px] hover:text-[#d2691e] font-montserrat">Shoots</a></li>
+        <li><a href="./lookbook.html" class="uppercase text-[17px] hover:text-[#d2691e] font-montserrat">Lookbook</a></li>
+        <li><a href="./About.html" class="uppercase text-[17px] hover:text-[#d2691e] font-montserrat">AboutMe</a></li>
+        <li><a href="./Blog.html" class="uppercase text-[17px] hover:text-[#d2691e] font-montserrat">FashionTips</a></li>
+        <li><a href="./contact.html" class="uppercase hover:text-[#d2691e] font-montserrat">Contact</a></li>
+    </ul>
+    
+    <a href="./contact.html" class="hidden md:block">
+        <button id="test" class="btn w-52 h-11 border-2 border-black hover:bg-black hover:text-white transition-colors duration-300">
+            Work with me
+        </button>
+    </a>
+    
+    <!-- Mobile Menu Button -->
+    <button id="menu-toggle" class="md:hidden text-3xl">
+        <i class="ri-menu-line"></i>
+    </button>
+
+    <!-- Add this Mobile Menu structure -->
+    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-64 bg-white transform translate-x-full transition-transform duration-300 ease-in-out z-50 shadow-lg">
+        <button id="close-menu" class="absolute top-6 right-6 text-2xl">
+            <i class="ri-close-line"></i>
+        </button>
+        <ul class="flex flex-col space-y-6 pt-20 px-6">
+            <li><a href="./Index.html" class="menu-link uppercase text-[17px] hover:text-[#d2691e] font-montserrat">Home</a></li>
+            <li><a href="./shoot.html" class="menu-link uppercase text-[17px] hover:text-[#d2691e] font-montserrat">Shoots</a></li>
+            <li><a href="./lookbook.html" class="menu-link uppercase text-[17px] hover:text-[#d2691e] font-montserrat">Lookbook</a></li>
+            <li><a href="./About.html" class="menu-link uppercase text-[17px] hover:text-[#d2691e] font-montserrat">AboutMe</a></li>
+            <li><a href="./Blog.html" class="menu-link uppercase text-[17px] hover:text-[#d2691e] font-montserrat">FashionTips</a></li>
+            <li><a href="./contact.html" class="menu-link uppercase hover:text-[#d2691e] font-montserrat">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+    <section class="bg-[#F4EFE8]">
+    <div class="max-w-4xl mx-auto px-4 py-12">
+
+        <!-- Heading -->
+        <h1 id="heading2" class=" font-cormorant text-9xl  text-center">About Me</h1>
+
+        <!-- Main Image -->
+        <div class="mt-8">
+            <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-about-page-header-img.jpg" 
+                 alt="About Me Image" class="w-full lookbook-hero rounded-lg">
+        </div>
+
+        <!-- Description -->
+        <div class="mt-64 space-y-6 text-dark text-lg font-montserrat">
+            <p class="w-3/5 m-auto text-sm">Neque facilisi a, faucibus orci orci nulla eget dictumst congue interdum etiam aliquam lobortis egestas pretium porttitor eget gravida urna, cursus imperdiet in arcu.</p>
+            <p class="w-3/5 m-auto text-sm">Turpis elementum, ultrices dui maecenas quisque cras dui sed porttitor aliquam morbi libero egestas lacus sed.</p>
+            <p class="w-3/5 m-auto text-sm">Commodo sit arcu curabitur egestas metus, dictum lectus vulputate sed pharetra nisl, sed eget pellentesque magna porttitor sed in maecenas maecenas rhoncus neque imperdiet eget bibendum malesuada enim, eu eu ac id pharetra ultrices tempus accumsan aenean nullam egestas.</p>
+            <p class="w-3/5 m-auto text-sm">Leo habitant feugiat lorem pharetra hendrerit orci pellentesque aliquam lorem aenean sit sagittis a, enim sit tellus ipsum magna tristique mauris et et venenatis convallis erat pellentesque arcu ac tellus sem sagittis odio aliquam, in eu purus eget cursus nunc, tellus amet tempus vitae amet ac aliquam non.</p>
+        </div>
+
+    </div>
+    <!--  -->
+  
+<!-- Image Gallery Section -->
+<div class="max-w-5xl mx-auto px-4 py-12 flex flex-wrap justify-center gap-6">
+
+    <!-- Left Column -->
+    <div id="rightcont7"  class="flex flex-col gap-6">
+        <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-blog-featured-img-3.jpg"
+             alt="Fashion Image 1" class="w-48 md:w-56 lg:w-64 rounded-lg">
+        <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-blog-featured-img-2.jpg"
+             alt="Fashion Image 2" class=" w-48 md:w-56 lg:w-64 rounded-lg">
+    </div>
+
+    <!-- Center Column -->
+    <div class="ter mx-6">
+        <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/lookbook-5.jpg"
+             alt="Fashion Image Center" class="w-64 imgsacleup md:w-80 lg:w-96 rounded-lg">
+    </div>
+
+    <!-- Right Column -->
+    <div id="rightcont8" class="h-[340px] mt-24 ">
+        <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-blog-featured-img-1.jpg"
+             alt="Fashion Image 3" class="h-full object-cover md:w-56 lg:w-64 rounded-lg">
+    </div>
+
+</div>
+
+<!-- Description -->
+<div class="max-w-3xl mx-auto px-4 text-center text-dark text-lg font-montserrat">
+    <p class="w-3/5 m-auto text-sm text-left">Convallis dignissim ut netus iaculis gravida in est dui vitae turpis purus a donec mauris duis nunc quam pharetra, semper dui diam placerat egestas pretium, commodo duis porttitor aenean elementum eu amet rhoncus sit ullamcorper urna sollicitudin sed risus ultrices facilisis eget viverra risus feugiat nec, erat aenean</p>
+    <br><br><br><br>
+</div>
+</section>
+<section class="brands-workswith">
+    <h2 id="heading1" class="font-montserrat mb-8 font-normal text-[17px]">Brands that I have collaborated with:</h2>
+    <div class="logos-container">
+      <div class="logos-slider">
+        <img src="../img/1.png" alt="Brand 1" class="logo">
+        <img src="../img/2.png" alt="Brand 2" class="logo">
+        <img src="../img/3.png" alt="Brand 3" class="logo">
+        <img src="../img/4.png" alt="Brand 4" class="logo">
+        <img src="../img/5.png" alt="Brand 5" class="logo">
+
+      </div>
+    </div>
+  </section>
+  <div class="flex flex-col md:flex-row justify-around items-center mt-32 px-4 gap-6">
+    <h3 id="leftpt2" class="font-cormorant text-4xl md:text-5xl text-center md:text-left mb-4 md:mb-0">@kristinafoxx</h3>
+    <button id="rightpt2"
+      class=" btnsm font-montserrat h-12 w-full md:w-[250px] border-2 border-black hover:text-[#ff8c00] hover:bg-black transition-transform transform hover:-translate-y-1 rightpt2">
+      <i class="fab fa-instagram i-con"></i>Follow My Instagram</button>
+  </div>
+
+  <div id="image-gallery" class="overflow-hidden relative w-full mt-16 md:mt-28">
+    <div class="wrapper flex">
+      <!-- Gallery images with responsive height -->
+      <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-instagram-img-1.jpg"
+        alt="Image 1" class="h-[180px] md:h-[260px] flex-shrink-0 object-cover">
+      <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-instagram-img-2.jpg"
+        alt="Image 2" class="h-[180px] md:h-[260px] flex-shrink-0 object-cover">
+      <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-instagram-img-3.jpg"
+        alt="Image 3" class="h-[180px] md:h-[260px] flex-shrink-0 object-cover">
+      <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-instagram-img-4.jpg"
+        alt="Image 4" class="h-[180px] md:h-[260px] flex-shrink-0 object-cover">
+      <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-instagram-img-5.jpg"
+        alt="Image 5" class="h-[180px] md:h-[260px] flex-shrink-0 object-cover">
+      <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-instagram-img-6.jpg"
+        alt="Image 6" class="h-[180px] md:h-[260px] flex-shrink-0 object-cover">
+      <!-- Duplicate images for seamless scrolling -->
+      <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-instagram-img-1.jpg"
+        alt="Image 1" class="h-[180px] md:h-[260px] flex-shrink-0 object-cover">
+      <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-instagram-img-2.jpg"
+        alt="Image 2" class="h-[180px] md:h-[260px] flex-shrink-0 object-cover">
+      <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-instagram-img-3.jpg"
+        alt="Image 3" class="h-[180px] md:h-[260px] flex-shrink-0 object-cover">
+    </div>
+  </div>
+  <div class="h-[600px] flex justify-center items-center">
+    <div id="letsget" class="lets-talk mt-20 up ">
+        <h3 class=" textvsml text-center text-4xl font-cormorant text-black  ">I Love To Work With Passionate</h3>
+        <h3 class=" textvsml text-center text-4xl font-cormorant mt-6">Fashion Brands And People.</h3>
+        <div class=" flex justify-center mt-12">
+         <a href="./contact.html"> <button class=" text-center font-cormorant w-[150px] h-[45px] border-2 border-black ">Lets Talk</button></a>
+        </div>
+      </div>
+    </div>
+      <footer class="w-full bg-white">
+        <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col items-center space-y-6">
+          <!-- Logo and Navigation -->
+          <div class="w-full flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+            <!-- Logo -->
+            <div>
+              <h1 class="text-2xl font-montserrat text-black leading-tight text-center md:text-left">
+                Kristin <br> Foxx <span class="inline-block w-4 h-[2px] bg-black mt-2"></span>
+              </h1>
+            </div>
+            <!-- Navigation -->
+            <ul
+              class="flex flex-wrap justify-center md:justify-start space-x-4 md:space-x-8 text-gray-700 text-sm font-cormorant">
+              <li><a href="./Index.html" class="hover:text-black text-[18px] ">Home</a></li>
+              <li><a href="./shoot.html" class="hover:text-black text-[18px] ">Shoots</a></li>
+              <li><a href="./lookbook.html" class="hover:text-black text-[18px] ">Lookbook</a></li>
+              <li><a href="./About.html" class="hover:text-black text-[18px] ">About Me</a></li>
+              <li><a href="./Blog.html" class="hover:text-black text-[18px] ">Fashion Tips</a></li>
+              <li><a href="./contact.html" class="hover:text-black text-[18px] ">Contact</a></li>
+            </ul>
+            <!-- Social Media Icons -->
+            <div class="flex justify-center md:justify-end space-x-4 text-black">
+              <a href="#" class="text-lg"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="text-lg"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-lg"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="text-lg"><i class="fab fa-pinterest"></i></a>
+              <a href="#" class="text-lg"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Section -->
+        <div
+          class="w-full h-32 bg-[#f7f3ee] text-gray-700 py-4 flex flex-col md:flex-row justify-around items-center px-4 md:px-6 font-cormorant space-y-2 md:space-y-0">
+          <p class="text-center text-[16px] md:text-left">Copyright © 2025 Fashion Influencer</p>
+          <p class="text-center text-[16px] md:text-right">Powered by laraib Asjed</p>
+        </div>
+      </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+  integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"
+  integrity="sha512-xAxjKW1J/R4TFytv43xvQ7jFTrJlBzsDOH/Aw0fFc2nvarQkE3d08lTicjzUsZJYDoHYDCpwsUUqOJXh34A1sw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/splittype"></script>
+<script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script> 
+
+<script src="../Js/index.js"></script>
+<script src="../Js/gsap/lookgsap.js"></script>
+</html>
+<style>
+  #cursor{
+    height: 50px;
+    width: 50px;
+    background: black;
+    /* overflow: hidden; */
+    border-radius: 50%;
+    position: fixed;
+    transition: transform 0.2s ease;
+    background-image: url(https://i.pinimg.com/736x/dc/80/e3/dc80e379f5e2262e8596d33fd25f95c4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+</style>

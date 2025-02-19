@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Influencer</title>
+    <link rel="stylesheet" href="../css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+  </style>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+    <link rel="stylesheet" href="../css/resp.css">
+</head>
+<body>
+  <div id="cursor"></div>
+  <nav id="nav" class="flex justify-between items-center px-9 py-6 relative bg-[#F4EFE8]">
+    <div class="logo w-[30%]">
+        <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/site-logo.svg" alt="Logo">
+    </div>
+    
+    <!-- Desktop Menu -->
+    <ul class="nav-link hidden md:flex justify-end items-center space-x-6">
+        <li><a href="./Index.html" class="uppercase text-[17px] hover:text-[#d2691e] font-montserrat">Home</a></li>
+        <li><a href="./shoot.html" class="uppercase text-[17px] hover:text-[#d2691e] font-montserrat">Shoots</a></li>
+        <li><a href="./lookbook.html" class="uppercase text-[17px] hover:text-[#d2691e] font-montserrat">Lookbook</a></li>
+        <li><a href="./About.html" class="uppercase text-[17px] hover:text-[#d2691e] font-montserrat">AboutMe</a></li>
+        <li><a href="./Blog.html" class="uppercase text-[17px] hover:text-[#d2691e] font-montserrat">FashionTips</a></li>
+        <li><a href="./contact.html" class="uppercase text-[17px] hover:text-[#d2691e] font-montserrat">Contact</a></li>
+    </ul>
+    
+    <a href="./contact.html" class="hidden md:block">
+        <button id="test" class="btn w-52 h-11 border-2 border-black hover:bg-black hover:text-white transition-colors duration-300">
+            Work with me
+        </button>
+    </a>
+    
+    <!-- Mobile Menu Button -->
+    <button id="menu-toggle" class="md:hidden text-3xl">
+        <i class="ri-menu-line"></i>
+    </button>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-64 bg-white transform translate-x-full transition-transform duration-300 ease-in-out z-50 shadow-lg">
+        <button id="close-menu" class="absolute top-6 right-6 text-2xl">
+            <i class="ri-close-line"></i>
+        </button>
+        <ul class="flex flex-col space-y-6 pt-20 px-6">
+            <li><a href="./Index.html" class="menu-link uppercase text-[17px] hover:text-[#d2691e] font-montserrat">Home</a></li>
+            <li><a href="./shoot.html" class="menu-link uppercase text-[17px] hover:text-[#d2691e] font-montserrat">Shoots</a></li>
+            <li><a href="./lookbook.html" class="menu-link uppercase text-[17px] hover:text-[#d2691e] font-montserrat">Lookbook</a></li>
+            <li><a href="./About.html" class="menu-link uppercase text-[17px] hover:text-[#d2691e] font-montserrat">AboutMe</a></li>
+            <li><a href="./Blog.html" class="menu-link uppercase text-[17px] hover:text-[#d2691e] font-montserrat">FashionTips</a></li>
+            <li><a href="./contact.html" class="menu-link uppercase text-[17px] hover:text-[#d2691e] font-montserrat">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+      <section class="bg-[#F4EFE8]">
+    <div class="text-center py-16">
+        <h1 id="heading1" class=" font-cormorant  text-6xl font-bold text-dark">CONTACT</h1>
+    </div>
+
+    <div class="max-w-6xl h-auto min-h-screen md:h-[1000px] mx-auto px-6 py-12">
+        <!-- Social Stats Section -->
+        <div class="grid grid-cols-3 text-center text-dark mb-12 font-montserrat">
+            <div>
+                <i class="fas fa-play-circle text-xl"></i>
+                <p class="text-lg font-medium mt-1">1.2 Million</p>
+            </div>
+            <div>
+                <i class="fas fa-camera-retro text-xl"></i>
+                <p class="text-lg font-medium mt-1">750,000</p>
+            </div>
+            <div>
+                <i class="fab fa-facebook text-xl"></i>
+                <p class="text-lg font-medium mt-1">850,000</p>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div  id="contact" class="bg-white p-10 rounded-lg shadow-md  mt-40  grid md:grid-cols-2 gap-8">
+            <!-- Left Side: Contact Info -->
+            <div>
+                <h2 class="font-cormorant text-3xl font-bold text-dark mb-4">Stay in Touch</h2>
+                <p class="font-montserrat text-lightgray mb-6 ">
+                    Dignissim risus, cursus eu diam vestibulum lectus lacus, ultrices quis odio fermentum quis nunc commodo sed ipsum quis quis nulla tellus dolor pellentesque eu.
+                </p>
+
+                <div class="mb-6">
+                    <p class="flex items-center text-lightgray text-sm font-medium mb-1 font-montserrat">
+                        <i class="font-montserrat fas fa-map-marker-alt text-red-500 mr-2"></i> Agency Contact
+                    </p>
+                    <p class="font-cormorant font-bold text-dark ">Acme Models Agency</p>
+                    <p class="font-montserrat text-lightgray">1234 W Russell Rd #123, Las Vegas, NV 12345, United States</p>
+                </div>
+
+                <div class="mb-6">
+                    <p class="font-montserrat flex items-center text-lightgray text-sm font-medium mb-1 ">
+                        <i class="font-montserrat fas fa-phone-alt text-red-500 mr-2"></i> Manager Contacts
+                    </p>
+                    <p class="font-montserrat text-dark">+01 - 123 456 7890</p>
+                    <p class="font-montserrat text-dark ">+01 - 123 456 7891</p>
+                </div>
+
+                <div>
+                    <p class="flex items-center text-lightgray text-sm font-medium mb-1 font-montserrat">
+                        <i class="font-montserrat fas fa-envelope text-red-500 mr-2"></i> For Collaboration
+                    </p>
+                    <p class="font-montserrat text-dark ">mail@example.com</p>
+                </div>
+            </div>
+
+            <!-- Right Side: Contact Form -->
+            <div>
+                <h2 class="font-cormorant text-3xl font-bold text-dark mb-4 ">Send Me a Message</h2>
+                <form class="space-y-4 font-montserrat">
+                    <div class="grid grid-cols-2 gap-4">
+                        <input type="text" placeholder="First Name" class="border border-gray-300 p-3 w-full rounded-md">
+                        <input type="text" placeholder="Last Name" class="border border-gray-300 p-3 w-full rounded-md">
+                    </div>
+                    <input type="email" placeholder="Email Address" class="border border-gray-300 p-3 w-full rounded-md">
+                    <input type="text" placeholder="Subject" class="border border-gray-300 p-3 w-full rounded-md">
+                    <textarea placeholder="Your Message" class="border border-gray-300 p-3 w-full rounded-md h-32"></textarea>
+                    <button type="submit" class=" font-cormorant border border-dark px-6 py-3 text-dark font-medium rounded-md hover:bg-black hover:text-white transition">
+                        SEND MESSAGE
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="h-[600px] flex justify-center items-center">
+    <div id="letsget" class="lets-talk mt-20 up ">
+        <h3 class=" textvsml text-center text-4xl font-cormorant text-black  ">I Love To Work With Passionate</h3>
+        <h3 class=" textvsml text-center text-4xl font-cormorant mt-6">Fashion Brands And People.</h3>
+        <div class=" flex justify-center mt-12">
+          <button class=" text-center font-cormorant w-[150px] h-[45px] border-2 border-black ">Lets Talk</button>
+        </div>
+      </div>
+    </div>
+      <footer class="w-full bg-white">
+        <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col items-center space-y-6">
+          <!-- Logo and Navigation -->
+          <div class="w-full flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+            <!-- Logo -->
+            <div>
+              <h1 class="text-2xl font-montserrat text-black leading-tight text-center md:text-left">
+                Kristin <br> Foxx <span class="inline-block w-4 h-[2px] bg-black mt-2"></span>
+              </h1>
+            </div>
+            <!-- Navigation -->
+            <ul
+              class="flex flex-wrap justify-center md:justify-start space-x-4 md:space-x-8 text-gray-700 text-sm font-cormorant">
+              <li><a href="./Index.html" class="hover:text-black text-[18px] ">Home</a></li>
+              <li><a href="./shoot.html" class="hover:text-black text-[18px] ">Shoots</a></li>
+              <li><a href="./Lookbook.html" class="hover:text-black text-[18px] ">Lookbook</a></li>
+              <li><a href="./About.html" class="hover:text-black text-[18px] ">About Me</a></li>
+              <li><a href="./Blog.html" class="hover:text-black text-[18px] ">Fashion Tips</a></li>
+              <li><a href="./contact.html" class="hover:text-black text-[18px] ">Contact</a></li>
+            </ul>
+            <!-- Social Media Icons -->
+            <div class="flex justify-center md:justify-end space-x-4 text-black">
+              <a href="#" class="text-lg"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="text-lg"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-lg"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="text-lg"><i class="fab fa-pinterest"></i></a>
+              <a href="#" class="text-lg"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Section -->
+        <div
+          class="w-full h-32 bg-[#f7f3ee] text-gray-700 py-4 flex flex-col md:flex-row justify-around items-center px-4 md:px-6 font-cormorant space-y-2 md:space-y-0">
+          <p class="text-center text-[16px] md:text-left">Copyright © 2025 Fashion Influencer</p>
+          <p class="text-center text-[16px] md:text-right">Powered by laraib Asjed</p>
+        </div>
+      </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+  integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"
+  integrity="sha512-xAxjKW1J/R4TFytv43xvQ7jFTrJlBzsDOH/Aw0fFc2nvarQkE3d08lTicjzUsZJYDoHYDCpwsUUqOJXh34A1sw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/splittype"></script>
+<script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script> 
+
+<script src="../Js/index.js"></script>
+<script src="../Js/gsap/lookgsap.js"></script>
+</html>
+<style>
+  #cursor{
+    height: 50px;
+    width: 50px;
+    background: black;
+    /* overflow: hidden; */
+    border-radius: 50%;
+    position: fixed;
+    transition: transform 0.2s ease;
+    background-image: url(https://i.pinimg.com/736x/66/b9/44/66b94483392b2113cc6bf65640afa899.jpg);
+    background-size: cover;
+    background-position: center;
+}
+</style>

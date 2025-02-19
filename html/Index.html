@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Influencer</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+    <link rel="stylesheet" href="../css/resp.css">
+</head>
+
+<body>
+  <div id="cursor"></div>
+<main class="bg-[#F4EFE8]">
+ 
+  <nav id="nav" class="flex justify-between items-center px-9 py-6 relative">
+      <div class="logo w-[30%]">
+          <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/site-logo.svg" alt="Logo">
+      </div>
+      
+      <!-- Desktop Menu -->
+      <ul class="nav-link hidden md:flex justify-end items-center space-x-6">
+          <li><a href="./Index.html" class="uppercase text-[17px] hover:text-[#d2691e] font-montserrat">Home</a></li>
+          <li><a href="./shoot.html" class="uppercase text-[17px] hover:text-[#d2691e] font-montserrat">Shoots</a></li>
+          <li><a href="./lookbook.html" class="uppercase text-[17px] hover:text-[#d2691e] font-montserrat">Lookbook</a></li>
+          <li><a href="./About.html" class="uppercase text-[17px] hover:text-[#d2691e] font-montserrat">AboutMe</a></li>
+          <li><a href="./Blog.html" class="uppercase text-[17px] hover:text-[#d2691e] font-montserrat">FashionTips</a></li>
+          <li><a href="./contact.html" class="uppercase hover:text-[#d2691e] font-montserrat">Contact</a></li>
+      </ul>
+      
+      <a href="./contact.html" class="hidden md:block">
+          <button id="test" class="btn w-52 h-11 border-2 border-black hover:bg-black hover:text-white transition-colors duration-300">
+              Work with me
+          </button>
+      </a>
+      
+      <!-- Mobile Menu Button -->
+      <button id="menu-toggle" class="md:hidden text-3xl">
+          <i class="ri-menu-line"></i>
+      </button>
+  </nav>
+  
+  <!-- Full Page Mobile Menu -->
+  <div id="mobile-menu" class="fixed inset-0 bg-white flex flex-col items-center justify-center transform translate-x-full transition-transform duration-300 md:hidden z-50">
+      <button id="close-menu" class="absolute top-6 right-6 text-3xl">
+          <i class="ri-close-line"></i>
+      </button>
+      <ul class="space-y-6 text-xl text-center">
+          <li><a href="./Index.html" class="uppercase hover:text-[#d2691e] font-montserrat menu-link">Home</a></li>
+          <li><a href="./shoot.html" class="uppercase hover:text-[#d2691e] font-montserrat menu-link">Shoots</a></li>
+          <li><a href="./lookbook.html" class="uppercase hover:text-[#d2691e] font-montserrat menu-link">Lookbook</a></li>
+          <li><a href="./About.html" class="uppercase hover:text-[#d2691e] font-montserrat menu-link">AboutMe</a></li>
+          <li><a href="./Blog.html" class="uppercase hover:text-[#d2691e] font-montserrat menu-link">FashionTips</a></li>
+          <li><a href="./contact.html" class="uppercase hover:text-[#d2691e] font-montserrat menu-link">Contact</a></li>
+      </ul>
+  </div>
+  <!-- Full Page Mobile Menu -->
+
+  
+  <div class="landing-layout flex flex-col md:flex-row">
+    <div class="lamding-img w-full md:w-2/4">
+      <img id="test" src="../img/{0C885253-9C94-4E8C-854C-BA3E8CA6496F}.png" alt="" class="w-full h-full object-cover">
+    </div>
+    <div class="landing-content w-full md:w-2/4 px-4 md:px-0">
+      <div class="main-text h-auto md:h-[70%] text-center md:text-right">
+        <h1 id="gaspleft"
+          class="font-montserrat font-semibold leading-[22px] text-[#1A1A1A] text-center md:text-end tracking-[3px] text-[16px] md:text-[19px] mt-8 md:mt-[6rem] mx-4 md:mx-[5rem]">
+          A Fashion & Lifestyle Blog</h1>
+
+        <h2 id="gaspleft" class="font-cormorant text-[80px] md:text-[140px] text-center mt-6 md:mt-[20px] md:ml-[75px]">Kristin</h2>
+        <h2 id="gaspleft" class="font-cormorant font-semibold text-[80px] md:text-[140px] text-center md:text-end md:mr-36">Foxx</h2>
+      </div>
+      <h3 class="follw-hed font-montserrat text-center md:text-end mb-8 md:mb-[3rem] mx-4 md:mr-[8rem] text-[14px] md:text-[16px] font-normal">
+        Follow Me
+      </h3>
+      <div class="follwer-container flex justify-center md:justify-end mx-4 md:mx-12">
+        <div class="social-icon px-4 md:px-12 cursor-pointer hover:scale-110 transition-transform">
+          <a href="https://www.youtube.com/" target="_blank" class="block">
+            <svg class="w-[20px] md:w-[27px] mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+              <path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+            </svg>
+            <h3 class="nunber font-montserrat pt-1 text-[14px] md:text-base text-center">1.2 Million</h3>
+          </a>
+        </div>
+        <div class="social-icon px-4 md:px-12 cursor-pointer hover:scale-110 transition-transform">
+          <a href="https://www.instagram.com/" target="_blank" class="block">
+            <svg class="w-[20px] md:w-[27px] mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+            </svg>
+            <h3 class="nunber font-montserrat pt-1 text-[14px] md:text-base text-center">750,000</h3>
+          </a>
+        </div>
+        <div class="social-icon px-4 md:px-12 cursor-pointer hover:scale-110 transition-transform">
+          <a href="https://www.facebook.com/" target="_blank" class="block">
+            <svg class="w-[20px] md:w-[27px] mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
+            </svg>
+            <h3 class="nunber font-montserrat pt-1 text-[14px] md:text-base text-center">850,000</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="brands-workswith">
+    <h2 id="heading1" class="font-montserrat mb-8 font-normal text-[17px]">Brands that I have collaborated with:</h2>
+    <div class="logos-container">
+      <div class="logos-slider">
+        <img src="../img/1.png" alt="Brand 1" class="logo">
+        <img src="../img/2.png" alt="Brand 2" class="logo">
+        <img src="../img/3.png" alt="Brand 3" class="logo">
+        <img src="../img/4.png" alt="Brand 4" class="logo">
+        <img src="../img/5.png" alt="Brand 5" class="logo">
+
+      </div>
+    </div>
+  </section>
+  <section class="px-4 md:px-6 lg:px-0">
+    <h2 id="heading2" class="mt-12 text-center text-3xl md:text-4xl lg:text-5xl font-cormorant">My Favorite Brands</h2>
+    <span class="flex justify-center mt-6 md:mt-8">
+      <p class="text-center w-full md:w-[60%] lg:w-[40%] font-montserrat text-[14px] md:text-[16px] font-normal">
+        Pretium odio accumsan nisi fringilla id pellentesque diam laoreet nullam magna ac dignissim tortor ipsum fermentum
+      </p>
+    </span>
+
+    <div class="brand-container flex flex-col lg:flex-row mt-16 md:mt-24 lg:mt-32">
+      <!-- Left Section -->
+      <div class="model-img w-full lg:w-2/4 mb-12 lg:mb-0">
+        <img id="thirdImage" src="../img/{EBDA77B3-AD17-4E66-9C07-424811A99764}.png" alt="" class="w-full">
+        
+        <div class="first-profile mt-8 lg:mt-0">
+          <div class="influncer-img w-[90%] md:w-[80%] lg:w-[70%] mt-8 md:mt-12 lg:mt-16 mx-auto lg:mx-36">
+            <img id="secondImage" src="../img/{61E0CDF4-1394-4F41-BC4F-CB54A2887F07}.png" alt="" class="w-full">
+          </div>
+          
+          <span class="mt-8 lg:mt-12 flex justify-center lg:justify-start lg:ml-40 font-montserrat">02/03</span>
+          
+          <div class="influncer-img-content text-center lg:text-left">
+            <h2 class="font-cormorant text-3xl md:text-4xl lg:text-5xl mt-8 lg:mt-12 mx-auto lg:ml-32 scaleup">Accessories</h2>
+            
+            <div class="para-sm flex justify-center mt-3 w-full">
+              <p id="text" class="w-[90%] md:w-[75%] lg:w-[65%] font-montserrat font-normal text-sm md:text-base split-text">
+                nteger et amet tristique risus laoreet malesuada lectus mi risus est, tellus donec fusce
+                enim commodo montes, lectus natoque vulputate tincidunt cras risus nisl.
+              </p>
+            </div>
+            
+            <div class="flex flex-wrap justify-center lg:justify-start gap-4 mt-8 lg:mt-12 lg:ml-40">
+              <div class="brand-logo w-[100px] md:w-[120px] lg:w-[130px]">
+                <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/logo-13.svg" alt="">
+              </div>
+              <div class="brand-logo w-[100px] md:w-[120px] lg:w-[130px]">
+                <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/logo-10.svg" alt="">
+              </div>
+              <div class="brand-logo w-[100px] md:w-[120px] lg:w-[130px]">
+                <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/logo-8.svg" alt="">
+              </div>
+            </div>
+            
+            <div class="flex justify-center lg:justify-start lg:mx-40 mt-4 lg:mt-0">
+              <div class="brand-logo w-[100px] md:w-[120px] lg:w-[130px]">
+                <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/logo-7.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Section -->
+      <div class="brand-content w-full lg:w-[35%]">
+        <span class="block text-center lg:text-left lg:ml-12 font-montserrat">01/03</span>
+        <h2 class="font-cormorant text-3xl md:text-4xl lg:text-5xl my-6 md:my-8 lg:my-[40px] text-center lg:text-left lg:mx-[50px] scaleup">Clothing</h2>
+        <p class="text-center lg:text-justify mx-4 lg:mx-7 text-sm md:text-base">
+          Diam pellentesque amet vulputate faucibus velit lorem malesuada mattis mauris egestas facilisi consectetur facilisis purus bibendum aliquam.
+        </p>
+
+        <!-- Brand Logo Containers -->
+        <div class="brand-logo-container flex flex-wrap justify-center lg:justify-start gap-4 mx-4 lg:mx-14 my-5">
+          <div class="brand-logo w-[100px] md:w-[120px] lg:w-[130px]">
+            <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/logo-6.svg" alt="">
+          </div>
+          <div class="brand-logo w-[100px] md:w-[120px] lg:w-[130px]">
+            <img src="../img/8.png" alt="">
+          </div>
+          <div class="brand-logo w-[100px] md:w-[120px] lg:w-[130px]">
+            <img src="../img/9.png" alt="">
+          </div>
+        </div>
+
+        <div class="brand-logo-container flex flex-wrap justify-center lg:justify-start gap-4 mx-4 lg:mx-14 my-5">
+          <div class="brand-logo w-[100px] md:w-[120px] lg:w-[130px]">
+            <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/logo-12.svg" alt="">
+          </div>
+          <div class="brand-logo w-[100px] md:w-[120px] lg:w-[130px]">
+            <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/logo-15.svg" alt="">
+          </div>
+          <div class="brand-logo w-[100px] md:w-[120px] lg:w-[130px]">
+            <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-featured-in-logo-3.svg" alt="">
+          </div>
+        </div>
+
+        <!-- Second Profile Section -->
+        <div class="second-profile mt-16 lg:mt-24">
+          <div class="sec-influncer-img w-[90%] md:w-[80%] lg:w-full mx-auto lg:mx-16">
+            <img id="firstImage" src="../img/fashion-influencer-favourite-cosmetic-brand.jpg" alt="" class="w-full">
+          </div>
+          
+          <div class="sec-img-content text-center lg:text-left">
+            <span class="block mt-6 lg:mt-8 lg:ml-16">03/03</span>
+            <h2 class="font-cormorant text-3xl md:text-4xl lg:text-5xl my-4 lg:mx-11 lg:my-5 scaleup">Cosmetic</h2>
+            <div class="para-sm flex justify-center lg:justify-start mt-3 w-full">
+              <p class="w-[90%] md:w-[80%] lg:w-[80%] text-sm md:text-base">
+                Enim, urna, lobortis vitae eleifend blandit lectus purus in aenean mi risus pulvinar sed nunc.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap justify-center lg:justify-start gap-4 mt-8 lg:mt-12 lg:ml-12">
+            <div class="brand-logo w-[100px] md:w-[120px] lg:w-[130px]">
+              <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-featured-in-logo-1.svg" alt="">
+            </div>
+            <div class="brand-logo w-[100px] md:w-[120px] lg:w-[130px]">
+              <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/logo-10.svg" alt="">
+            </div>
+            <div class="brand-logo w-[100px] md:w-[120px] lg:w-[130px]">
+              <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/logo-8.svg" alt="">
+            </div>
+          </div>
+
+          <div class="flex flex-wrap justify-center lg:justify-start gap-4 mt-4 lg:ml-12">
+            <div class="brand-logo w-[100px] md:w-[120px] lg:w-[130px]">
+              <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/logo-14.svg" alt="">
+            </div>
+            <div class="brand-logo w-[100px] md:w-[120px] lg:w-[130px]">
+              <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/logo-9.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="target" class="blog-sec mt-28 ">
+    <div class="py-16">
+      <div class="max-w-6xl mx-auto px-6">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+          <h2 id="heading3" class=" font-cormorant text-5xl">Recent Blogs</h2>
+          <p class="font-montserrat my-14 mx-56">
+            Proin odio accumsan nisi fringilla id pellentesque diam laoreet nullam magna ac
+            dignissim tortor ipsum fermentum.
+          </p>
+        </div>
+
+        <!-- Blog Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-[5rem] gap-y-12">
+          <!-- Blog Item 1 -->
+          <div class="w-[108%]">
+            <img id="fourthImage"
+              src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-shop-img-1.jpg"
+              alt="Urban Fashion" class="" />
+            <div class="mt-4">
+              <span class="block font-montserrat text-red-600 mt-[2rem]">Urban Fashion</span>
+              <h3 class="textsml font-cormorant text-3xl mt-8 ">
+                As Purus Mauris in Aliquam Est Pretium
+              </h3>
+            </div>
+          </div>
+
+          <!-- Blog Item 2 -->
+          <div class="w-[108%]">
+            <img id="fifthImage"
+              src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-shop-img-2.jpg"
+              alt="Best For Winter" class="" />
+            <div class="mt-4">
+              <span class="block font-montserrat text-red-600 mt-[2rem]">Best For Winter</span>
+              <h3 class="textsml font-cormorant text-3xl mt-8 ">
+                As Velit in Magna Justo
+              </h3>
+            </div>
+          </div>
+
+          <!-- Blog Item 3 -->
+          <div class="w-[108%]">
+            <img id="sixthImage"
+              src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-shop-img-3.jpg"
+              alt="Trendy Work Wear" class=" " />
+            <div class="mt-4">
+              <span class="block font-montserrat text-red-600 mt-[2rem]">Trendy Work Wear</span>
+              <h3 class="textsml font-cormorant text-3xl mt-8 ">
+                Etlam Mauris Augue Eleifend Porttitor
+              </h3>
+            </div>
+          </div>
+
+          <!-- Blog Item 4 -->
+          <div class="w-[108%]">
+            <img id="seventhImage"
+              src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-shop-img-4.jpg"
+              alt="Casual Summer Wear" class="" />
+            <div class="mt-4">
+              <span class="block font-montserrat text-red-600 mt-[2rem]">Casual Summer Wear</span>
+              <h3 class=" textsml font-cormorant text-3xl mt-8 ">
+                Alquet Ac Tortor Tristique Facilisis Nulla Aenean
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <section class="max-w-6xl mx-auto py-8 md:py-10 lg:py-12 px-4 bg-[#F4EFE8]">
+    <h1 id="heading4" class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-cormorant text-center mb-8 md:mb-10 lg:mb-12">
+      My Fashion Tips
+    </h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
+      
+      <!-- Card 1 -->
+      <div class="bg-[#F4EFE8] shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+        <img src="https://img.freepik.com/free-photo/front-view-blonde-woman-uses-her-powder-brush-her-face-make-up_140725-37482.jpg?ga=GA1.1.775459171.1736044657&semt=ais_hybrid"
+          alt="Fashion Tip 1" class="w-full h-48 md:h-56 lg:h-64 object-cover">
+        <div class="p-4 md:p-5 lg:p-6">
+          <h2 class="text-lg sm:text-xl md:text-2xl lg:text-2xl font-montserrat font-semibold mb-2 md:mb-3">
+            Transparent Rain Coat
+          </h2>
+          <p class="text-gray-600 font-montserrat text-sm md:text-base">
+            Sed consectetur.
+          </p>
+          <a href="#" class="text-red-500 mt-3 md:mt-4 inline-block font-montserrat text-sm md:text-base">Read More →</a>
+        </div>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="bg-[#F4EFE8] shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+        <img src="https://img.freepik.com/free-photo/seductive-woman-touching-face-with-makeup-brush_176420-17598.jpg?ga=GA1.1.775459171.1736044657&semt=ais_hybrid"
+          alt="Fashion Tip 2" class="w-full h-48 md:h-56 lg:h-64 object-cover">
+        <div class="p-4 md:p-5 lg:p-6">
+          <h2 class="text-lg sm:text-xl md:text-2xl lg:text-2xl font-montserrat font-semibold mb-2 md:mb-3">
+            Flawless Party Makeup
+          </h2>
+          <p class="text-gray-600 font-montserrat text-sm md:text-base">
+            Laoreet diam amet urna.
+          </p>
+          <a href="#" class="text-red-500 mt-3 md:mt-4 inline-block font-montserrat text-sm md:text-base">Read More →</a>
+        </div>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="bg-[#F4EFE8] shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+        <img src="https://img.freepik.com/free-photo/impressed-young-pretty-girl-sitting-makeup-table-with-makeup-tools-holding-powder-brush-winner-cup-looking-cup-isolated-olive-green-background_141793-31883.jpg?ga=GA1.1.775459171.1736044657&semt=ais_hybrid"
+          alt="Fashion Tip 3" class="w-full h-48 md:h-56 lg:h-64 object-cover">
+        <div class="p-4 md:p-5 lg:p-6">
+          <h2 class="  text-lg sm:text-xl md:text-2xl lg:text-2xl font-montserrat font-semibold mb-2 md:mb-3">
+            Black Dress by Wangoon
+          </h2>
+          <p class="text-gray-600 font-montserrat text-sm md:text-base">
+            Nisl bibendum.
+          </p>
+          <a href="#" class="text-red-500 mt-3 md:mt-4 inline-block font-montserrat text-sm md:text-base">Read More →</a>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+  <section class="video-sec mt-20">
+    <div class="heading flex flex-col sm:flex-row items-center sm:justify-around gap-6 sm:gap-0 px-4 sm:px-6">
+      <h2 id="left" class="font-cormorant text-3xl sm:text-4xl md:text-5xl text-center sm:text-left">Latest Videos</h2>
+      <button id="right"
+        class=" btnsm font-montserrat h-[45px] w-[90%] sm:w-[220px] border-2 border-black hover:bg-black hover:text-white transition-transform transform hover:-translate-y-1">
+        Subscribe My Channel
+      </button>
+    </div>
+    <div class="video-content mt-32 flex flex-wrap justify-center gap-8">
+      <!-- First Box -->
+      <div class="flex flex-col items-center w-full sm:w-[80%] md:w-[48%] lg:w-[45%]">
+        <div id="vid1"
+          class="relative w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] bg-cover bg-center rounded-lg shadow-lg"
+          style="background-image: url('https://i.ytimg.com/vi/wZx7A3HJ72I/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCHZzThSFDNqz0IW7RBboqo3bn0yw');">
+          <!-- Play Button -->
+          <a href="https://your-first-url.com"
+            class="absolute inset-0 flex items-center justify-center bg-black/50 rounded-lg">
+            <button
+              class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center bg-[#e8d7d729] rounded-full shadow-lg hover:scale-105 transition-transform">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 sm:w-8 sm:h-8 text-red-800" viewBox="0 0 24 24"
+                fill="currentColor">
+                <path d="M5 3l14 9-14 9V3z" />
+              </svg>
+            </button>
+          </a>
+        </div>
+        <h3 class="mt-4 font-cormorant text-center text-sm sm:text-base md:text-lg font-semibold text-gray-800">Winter
+          platea eget fusce nunc enim molestie</h3>
+      </div>
+
+      <!-- Second Box -->
+      <div class="flex flex-col items-center w-full sm:w-[80%] md:w-[48%] lg:w-[45%]">
+        <div id="vid2"
+          class="relative w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] bg-cover bg-center rounded-lg shadow-lg"
+          style="background-image: url('https://i.ytimg.com/vi/FGPKFudKUNQ/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBakUIGmYUTqNSe9GFzY9IGux7fVw');">
+          <!-- Play Button -->
+          <a href="https://your-second-url.com"
+            class="absolute inset-0 flex items-center justify-center bg-black/50 rounded-lg">
+            <button
+              class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center bg-[#e8d7d729] rounded-full shadow-lg hover:scale-105 transition-transform">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 sm:w-8 sm:h-8 text-red-800" viewBox="0 0 24 24"
+                fill="currentColor">
+                <path d="M5 3l14 9-14 9V3z" />
+              </svg>
+            </button>
+          </a>
+        </div>
+        <h3 class="mt-4 text-center font-cormorant sm:text-base md:text-lg font-semibold text-gray-800">Street style
+          tras felis ultricies egestas pharetra sed</h3>
+      </div>
+    </div>
+
+
+
+  </section>
+  <!-- Photos Section -->
+  <div class="photos flex flex-col md:flex-row justify-center items-center mt-12 md:mt-24 gap-8 md:gap-[40px] down px-4 md:px-6">
+    <div class="w-full md:w-auto">
+      <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-video-img-3.jpg"
+        alt="" class="w-full md:w-[420px] object-cover">
+      <p class="font-montserrat mt-4 md:mt-8 font-semibold text-sm md:text-base text-center md:text-left">
+        Outing with Lisa dictumst malesuada eleifend
+      </p>
+    </div>
+    <div class="w-full md:w-auto">
+      <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-video-img-4.jpg"
+        alt="" class="w-full md:w-[420px] object-cover">
+      <p class="font-montserrat mt-4 md:mt-8 font-semibold text-sm md:text-base text-center md:text-left">
+        Retro Disco Fashion At dictumst malesuada eleifend sed
+      </p>
+    </div>
+    <div class="w-full md:w-auto">
+      <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-video-img-5.jpg"
+        alt="" class="w-full md:w-[420px] object-cover">
+      <p class="font-montserrat mt-4 md:mt-8 font-semibold text-sm md:text-base text-center md:text-left">
+        Daily Outfit dictumst malesuada eleifend
+      </p>
+    </div>
+  </div>
+
+  <!-- Instagram Section -->
+  <div class="flex flex-col md:flex-row justify-around items-center mt-32 px-4 gap-6">
+    <h3 id="leftpt2" class="font-cormorant text-4xl md:text-5xl text-center md:text-left mb-4 md:mb-0">@kristinafoxx</h3>
+    <button id="rightpt2"
+      class=" btnsm font-montserrat h-12 w-full md:w-[250px] border-2 border-black hover:text-[#ff8c00] hover:bg-black transition-transform transform hover:-translate-y-1 rightpt2">
+      <i class="fab fa-instagram i-con"></i>Follow My Instagram</button>
+  </div>
+
+  <!-- Image Gallery -->
+  <div id="image-gallery" class="overflow-hidden relative w-full mt-16 md:mt-28">
+    <div class="wrapper flex">
+      <!-- Gallery images with responsive height -->
+      <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-instagram-img-1.jpg"
+        alt="Image 1" class="h-[180px] md:h-[260px] flex-shrink-0 object-cover">
+      <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-instagram-img-2.jpg"
+        alt="Image 2" class="h-[180px] md:h-[260px] flex-shrink-0 object-cover">
+      <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-instagram-img-3.jpg"
+        alt="Image 3" class="h-[180px] md:h-[260px] flex-shrink-0 object-cover">
+      <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-instagram-img-4.jpg"
+        alt="Image 4" class="h-[180px] md:h-[260px] flex-shrink-0 object-cover">
+      <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-instagram-img-5.jpg"
+        alt="Image 5" class="h-[180px] md:h-[260px] flex-shrink-0 object-cover">
+      <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-instagram-img-6.jpg"
+        alt="Image 6" class="h-[180px] md:h-[260px] flex-shrink-0 object-cover">
+      <!-- Duplicate images for seamless scrolling -->
+      <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-instagram-img-1.jpg"
+        alt="Image 1" class="h-[180px] md:h-[260px] flex-shrink-0 object-cover">
+      <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-instagram-img-2.jpg"
+        alt="Image 2" class="h-[180px] md:h-[260px] flex-shrink-0 object-cover">
+      <img src="https://websitedemos.net/fashion-influencer-04/wp-content/uploads/sites/798/2021/04/fashion-influencer-instagram-img-3.jpg"
+        alt="Image 3" class="h-[180px] md:h-[260px] flex-shrink-0 object-cover">
+    </div>
+  </div>
+
+</main>
+
+<div class="lets-talk mt-20 up ">
+  <h3 class=" textvsml text-center text-4xl font-cormorant text-black  ">I Love To Work With Passionate</h3>
+  <h3 class=" textvsml text-center text-4xl font-cormorant mt-6">Fashion Brands And People.</h3>
+  <div class=" flex justify-center mt-12">
+  <a href="./contact.html"> <button class=" text-center font-cormorant w-[150px] h-[45px] border-2 border-black ">Lets Talk</button></a>
+  </div>
+</div>
+
+<footer class="w-full bg-white">
+  <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col items-center space-y-6">
+    <!-- Logo and Navigation -->
+    <div class="w-full flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+      <!-- Logo -->
+      <div>
+        <h1 class="text-2xl font-montserrat text-black leading-tight text-center md:text-left">
+          Kristin <br> Foxx <span class="inline-block w-4 h-[2px] bg-black mt-2"></span>
+        </h1>
+      </div>
+      <!-- Navigation -->
+      <ul
+        class="flex flex-wrap justify-center md:justify-start space-x-4 md:space-x-8 text-gray-700 text-sm font-cormorant">
+        <li><a href="./Index.html" class="hover:text-black text-[18px] ">Home</a></li>
+        <li><a href="./shoot.html" class="hover:text-black text-[18px] ">Shoots</a></li>
+        <li><a href="./lookbook.html" class="hover:text-black text-[18px] ">Lookbook</a></li>
+        <li><a href="./About.html" class="hover:text-black text-[18px] ">About Me</a></li>
+        <li><a href="./Blog.html" class="hover:text-black text-[18px] ">Fashion Tips</a></li>
+        <li><a href="./contact.html" class="hover:text-black text-[18px] ">Contact</a></li>
+      </ul>
+      <!-- Social Media Icons -->
+      <div class="flex justify-center md:justify-end space-x-4 text-black">
+        <a href="#" class="text-lg"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="text-lg"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-lg"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-lg"><i class="fab fa-pinterest"></i></a>
+        <a href="#" class="text-lg"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+  <!-- Bottom Section -->
+  <div
+    class="w-full h-32 bg-[#f7f3ee] text-gray-700 py-4 flex flex-col md:flex-row justify-around items-center px-4 md:px-6 font-cormorant space-y-2 md:space-y-0">
+    <p class="text-center text-[16px] md:text-left">Copyright © 2025 Fashion Influencer</p>
+    <p class="text-center text-[16px] md:text-right">Powered by laraib Asjed</p>
+  </div>
+</footer>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+  integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"
+  integrity="sha512-xAxjKW1J/R4TFytv43xvQ7jFTrJlBzsDOH/Aw0fFc2nvarQkE3d08lTicjzUsZJYDoHYDCpwsUUqOJXh34A1sw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/splittype"></script>
+<script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script> 
+
+<script src="../Js/index.js"></script>
+<script src="../Js/gsap/gsap.js"></script>
+
+</html>

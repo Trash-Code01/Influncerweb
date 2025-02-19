@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+#cursor{
+    height: 50px;
+    width: 50px;
+    background: black;
+    /* overflow: hidden; */
+    border-radius: 50%;
+    position: fixed;
+    transition: transform 0.2s ease;
+    background-image: url(https://i.pinimg.com/736x/5c/57/4d/5c574dca2999083212042b3502e71047.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.cursor.grow {
+    transform: scale(2);
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+}
+  /* Tailwind utility overrides */
+  .wrapper {
+    display: flex; /* Images aligned horizontally */
+    gap: 0; /* No space between items */
+  }
+  #image-gallery img {
+    margin: 0; /* Remove margins between images */
+    padding: 0; /* Remove padding between images */
+    display: block; /* Prevent inline element spacing */
+  }
+
+  .shoot-container {
+    display: flex
+;
+    justify-content: center;
+}
+
+/* utility classes */
+
+.i-con{
+  padding: 0 7px;
+}
+.font-cormorant {
+    font-family: 'Cormorant SC', serif;
+    font-weight: 600;
+  }
+
+  .font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  /* css animation part */
+  .brands-workswith {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 5rem;
+  }
+  
+  /* .brands-workswith h2 {
+    font-family: 'Cormorant SC', serif;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  } */
+  
+  .logos-container {
+    position: relative;
+    width: 100%; /* Full width of the screen */
+    overflow: hidden;
+  }
+  
+  .logos-slider {
+    display: flex;
+    justify-content: space-between; /* Space logos evenly */
+    align-items: center;
+    width: 80vw; /* Occupies 80% of the viewport width */
+    margin: 0 auto; /* Centers the slider */
+    animation: slide 10s linear infinite;
+  }
+  
+  .logo {
+    width: 150px; /* Adjust logo size as needed */
+    height: auto;
+    object-fit: contain;
+  }
+ 
+  
+  /* Animation */
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-80vw); /* Move by 80vw width */
+    }
+  }
