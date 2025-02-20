@@ -2,13 +2,14 @@
 
 A retro-styled website infused with cutting-edge animations using GSAP, ScrollTrigger, and Lenis. Combines nostalgic design with buttery-smooth interactions for a unique user experience. Perfect for portfolios, creative agencies, or experimental projects.
 
-![{BC0C13C8-A154-42E1-8BEA-9E538832A708}](https://github.com/user-attachments/assets/5cc6459c-2ef4-4efe-81b1-11180a642524)
-
-
-![{0E672432-C0B2-445B-8B58-3C10DF1155EF}](https://github.com/user-attachments/assets/d9971389-d9a8-4415-bb58-61ab19801de4)
+![{5F3373F6-7CB2-403B-8D40-E0C713910CCF}](https://github.com/user-attachments/assets/d638c1ba-840f-4388-99a0-8da8277d4f3f)
 
 
 
+![{380D5D55-3593-497B-983B-D6631F69B30B}](https://github.com/user-attachments/assets/95d0c1a5-fb2c-4880-b7d8-7ca783018661)
+
+
+Try out here the Demo https://trash-code01.github.io/Influncerweb/Index.html
 
 ## 🚀 Features
 - **Smooth Scrolling** powered by Lenis
