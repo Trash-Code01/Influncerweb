@@ -1,30 +1,23 @@
-# 🎩 Vintage Vibes with Modern Motion ✨
+🎩 Vintage Vibes with Modern Motion ✨
+A retro-inspired website infused with cutting-edge animations, blending nostalgic aesthetics with buttery-smooth interactions. Built using GSAP, ScrollTrigger, and Lenis, this project offers an immersive experience, perfect for portfolios, creative agencies, and experimental web projects.
 
-A retro-styled website infused with cutting-edge animations using GSAP, ScrollTrigger, and Lenis. Combines nostalgic design with buttery-smooth interactions for a unique user experience. Perfect for portfolios, creative agencies, or experimental projects.
+🚀 Live Demo
 
-![{5F3373F6-7CB2-403B-8D40-E0C713910CCF}](https://github.com/user-attachments/assets/d638c1ba-840f-4388-99a0-8da8277d4f3f)
+⚡ Features
+🔹 Lenis-powered smooth scrolling
+🔹 Custom animated cursor using GSAP tracking
+🔹 Scroll-triggered animations for:
 
-
-
-![{380D5D55-3593-497B-983B-D6631F69B30B}](https://github.com/user-attachments/assets/95d0c1a5-fb2c-4880-b7d8-7ca783018661)
-
-
-Try out here the Demo https://trash-code01.github.io/Influncerweb/Index.html
-
-## 🚀 Features
-- **Smooth Scrolling** powered by Lenis
-- **Custom Animated Cursor** with GSAP tracking
-- Scroll-triggered animations for:
-  - Navbar fade-in
-  - Hero section bounce effects
-  - Grid element staggered reveals
-  - Contact section parallax movements
-- Horizontal infinite-scroll image gallery
-- Hover-triggered scale animations
-
-## ⚡ Code Highlight: GSAP Magic
-```javascript
-// Custom cursor animation
+Navbar fade-in
+Hero section bounce effects
+Grid element staggered reveals
+Contact section parallax movements
+Horizontal infinite-scroll image gallery
+Hover-triggered scale animations
+🎯 GSAP Animation Highlights
+javascript
+Copy
+// Custom Cursor Animation
 const customCursor = () => {
   const cursor = document.getElementById("cursor");
   document.body.addEventListener("mousemove", (e) => {
@@ -37,60 +30,58 @@ const customCursor = () => {
   });
 };
 
-// Scroll-triggered hero animation
+// Scroll-triggered Hero Animation
 gsap.to(".lookbook-hero", {
   scrollTrigger: {
-    trigger: hero,
+    trigger: ".lookbook-hero",
     start: "top center",
     scrub: true
   },
   scale: 1.4,
   duration: 1
 });
-
-🛠️ Installation
-Clone repo
+🛠 Installation
+Clone the repository:
 
 bash
 Copy
 git clone https://github.com/yourusername/vintage-modern-website.git
-Install dependencies
+Install dependencies:
 
 bash
 Copy
 npm install
-Start development server
+Start the development server:
 
 bash
 Copy
 npm run dev
-🌟 Technologies
-GSAP
-Lenis
-ScrollTrigger
+🌟 Built With
+✅ GSAP - High-performance animations
+✅ Lenis - Smooth scrolling library
+✅ ScrollTrigger - Scroll-based animations
 
 🎨 Customization Tips
-Modify animation timing in lookbookanimation()
-
-Adjust scroll trigger positions:
+🔸 Modify animation timing inside lookbookanimation()
+🔸 Adjust ScrollTrigger positions:
 
 javascript
 Copy
 start: "top 80%", // When animation starts
 end: "top 20%"   // When animation completes
-Experiment with GSAP eases ("bounce.out", "power2.inOut")
+🔸 Experiment with GSAP eases:
 
-🌍 SEO Optimization
-Semantic HTML5 markup
-
-Responsive images with lazy loading
-
-Smooth scroll behavior for better UX metrics
-
-Reduced CLS (Cumulative Layout Shift) via proper animation sequencing
+"bounce.out" for playful effects
+"power2.inOut" for smooth transitions
+🌍 SEO & Performance Optimization
+✅ Semantic HTML5 markup
+✅ Responsive images with lazy loading
+✅ Optimized smooth scrolling for better UX metrics
+✅ Reduced CLS (Cumulative Layout Shift) via proper animation sequencing
 
 🤝 Contributing
-Pull requests welcome! For major changes, please open an issue first.
+Pull requests are welcome! If you're making major changes, please open an issue first to discuss your ideas.
 
 📜 License
-MIT © laraib asjad
+MIT © Laraib Asjad
+
