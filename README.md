@@ -1,7 +1,11 @@
 🎩 Vintage Vibes with Modern Motion ✨
 A retro-inspired website infused with cutting-edge animations, blending nostalgic aesthetics with buttery-smooth interactions. Built using GSAP, ScrollTrigger, and Lenis, this project offers an immersive experience, perfect for portfolios, creative agencies, and experimental web projects.
 
-🚀 Live Demo
+Live Demo https://trash-code01.github.io/Influncerweb/Index.html
+
+![image](https://github.com/user-attachments/assets/96f8f95f-7a30-4565-a87f-9c0a2de253dc)
+
+![image](https://github.com/user-attachments/assets/2e7495fa-31ec-4c24-892c-b0f3bb41ef77)
 
 ⚡ Features
 🔹 Lenis-powered smooth scrolling
@@ -14,9 +18,9 @@ Grid element staggered reveals
 Contact section parallax movements
 Horizontal infinite-scroll image gallery
 Hover-triggered scale animations
+
 🎯 GSAP Animation Highlights
-javascript
-Copy
+
 // Custom Cursor Animation
 const customCursor = () => {
   const cursor = document.getElementById("cursor");
@@ -40,39 +44,16 @@ gsap.to(".lookbook-hero", {
   scale: 1.4,
   duration: 1
 });
+
 🛠 Installation
-Clone the repository:
-
-bash
-Copy
+Clone the repository
 git clone https://github.com/yourusername/vintage-modern-website.git
-Install dependencies:
 
-bash
-Copy
-npm install
-Start the development server:
-
-bash
-Copy
-npm run dev
 🌟 Built With
 ✅ GSAP - High-performance animations
 ✅ Lenis - Smooth scrolling library
 ✅ ScrollTrigger - Scroll-based animations
 
-🎨 Customization Tips
-🔸 Modify animation timing inside lookbookanimation()
-🔸 Adjust ScrollTrigger positions:
-
-javascript
-Copy
-start: "top 80%", // When animation starts
-end: "top 20%"   // When animation completes
-🔸 Experiment with GSAP eases:
-
-"bounce.out" for playful effects
-"power2.inOut" for smooth transitions
 🌍 SEO & Performance Optimization
 ✅ Semantic HTML5 markup
 ✅ Responsive images with lazy loading
@@ -84,4 +65,3 @@ Pull requests are welcome! If you're making major changes, please open an issue 
 
 📜 License
 MIT © Laraib Asjad
-
