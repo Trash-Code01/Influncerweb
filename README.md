@@ -1,27 +1,33 @@
-🎩 Vintage Vibes with Modern Motion ✨
-A retro-inspired website infused with cutting-edge animations, blending nostalgic aesthetics with buttery-smooth interactions. Built using GSAP, ScrollTrigger, and Lenis, this project offers an immersive experience, perfect for portfolios, creative agencies, and experimental web projects.
+# 🎩 Vintage Vibes with Modern Motion ✨  
 
-Live Demo https://trash-code01.github.io/Influncerweb/Index.html
+**A retro-inspired website infused with cutting-edge animations**, blending nostalgic aesthetics with buttery-smooth interactions. Built using GSAP, ScrollTrigger, and Lenis for an immersive experience. Perfect for portfolios, creative agencies, and experimental web projects.  
 
-![image](https://github.com/user-attachments/assets/96f8f95f-7a30-4565-a87f-9c0a2de253dc)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Explore-FF4088?style=for-the-badge)](https://trash-code01.github.io/Influncerweb/Index.html)  
 
-![image](https://github.com/user-attachments/assets/2e7495fa-31ec-4c24-892c-b0f3bb41ef77)
+---
 
-⚡ Features
-🔹 Lenis-powered smooth scrolling
-🔹 Custom animated cursor using GSAP tracking
-🔹 Scroll-triggered animations for:
+## 🖼 Preview  
+![Hero Section](https://github.com/user-attachments/assets/96f8f95f-7a30-4565-a87f-9c0a2de253dc)  
+![Gallery Section](https://github.com/user-attachments/assets/2e7495fa-31ec-4c24-892c-b0f3bb41ef77)  
 
-Navbar fade-in
-Hero section bounce effects
-Grid element staggered reveals
-Contact section parallax movements
-Horizontal infinite-scroll image gallery
-Hover-triggered scale animations
+---
 
-🎯 GSAP Animation Highlights
+## ⚡ Features  
+🔹 **Lenis-powered** butter-smooth scrolling  
+🔹 **Custom GSAP-animated cursor** with real-time tracking  
+🔹 **Scroll-triggered magic**:  
+   - Navbar fade-in transitions  
+   - Hero section bounce effects  
+   - Grid element staggered reveals  
+   - Contact section parallax movements  
+   - Infinite horizontal image scroll  
+🔹 **Hover interactions**: Element scale animations  
 
-// Custom Cursor Animation
+---
+
+## 🎯 GSAP Animation Toolkit  
+### Custom Cursor  
+```javascript
 const customCursor = () => {
   const cursor = document.getElementById("cursor");
   document.body.addEventListener("mousemove", (e) => {
@@ -34,34 +40,35 @@ const customCursor = () => {
   });
 };
 
-// Scroll-triggered Hero Animation
-gsap.to(".lookbook-hero", {
-  scrollTrigger: {
-    trigger: ".lookbook-hero",
-    start: "top center",
-    scrub: true
-  },
-  scale: 1.4,
-  duration: 1
-});
-
-🛠 Installation
-Clone the repository
+🛠 Setup Guide
+Clone the repo:
 git clone https://github.com/yourusername/vintage-modern-website.git
 
-🌟 Built With
-✅ GSAP - High-performance animations
-✅ Lenis - Smooth scrolling library
-✅ ScrollTrigger - Scroll-based animations
+🌟 Tech Stack
+✅ GSAP - Professional-grade animations
+✅ Lenis - Silk-smooth scrolling engine
+✅ ScrollTrigger - Scroll-driven animation orchestration
 
-🌍 SEO & Performance Optimization
-✅ Semantic HTML5 markup
-✅ Responsive images with lazy loading
-✅ Optimized smooth scrolling for better UX metrics
-✅ Reduced CLS (Cumulative Layout Shift) via proper animation sequencing
+🌍 Performance & SEO
+✅ Semantic HTML5 structure
+✅ Lazy-loaded responsive images
+✅ CLS-optimized animation sequencing
+✅ Device-agnostic smooth scrolling
 
-🤝 Contributing
-Pull requests are welcome! If you're making major changes, please open an issue first to discuss your ideas.
+🤝 Contribute
+We welcome pull requests!
+
+Fork the repository
+
+Create a feature branch (git checkout -b feature/YourFeature)
+
+Commit changes (git commit -m 'Add revolutionary feature')
+
+Push to branch (git push origin feature/YourFeature)
+
+Open a Pull Request
 
 📜 License
 MIT © Laraib Asjad
+
+⭐ Star this repo if it makes your developer heart flutter!
